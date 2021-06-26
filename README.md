@@ -29,13 +29,13 @@ Trip Dan 06:12 06:32 21.8
 Trip Lauren 12:01 13:16 42.0`
 ```
 
-`Expected output:
+Expected output:
 ```
 Lauren: 42 miles @ 34 mph
 Dan: 39 miles @ 47 mph
 Kumi: 0 miles`
 ```
 
-## My first outlook
+## My Outlook Process
 
-
+...
