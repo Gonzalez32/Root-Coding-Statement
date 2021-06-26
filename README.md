@@ -38,4 +38,10 @@ Kumi: 0 miles
 
 ## My Outlook Process
 
-...
+Before any code is written, I wrote all my logic down and review on how I would tackle this problem down.
+![note](https://i.imgur.com/ivA8NNI.jpg)
+At first, my thought was to generate express but after re-reading the problem statement I was overthinking it.
+In the **driver.js** file I decided to make a class for driver knowing is has one assocation, trip. This is where (one to many) comes to play, as a driver has many trips. First command is Driver as it will register a new driver in the app. Second command is Trip which is connected to driver in this statement.
+
+## Usage
+* From the root directory we can run the program in our command line using `node runProgram.js` that will get a list of drivers including mileage & mph.

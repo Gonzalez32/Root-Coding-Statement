@@ -56,7 +56,7 @@ const reportAllDriversInfo = () => {
     
     // Here will Log out our message for driver and trip
     allDriversReportSorted.forEach(driverReport => {
-        console.log(`===========================`)
+        // console.log(`===========================`)
         console.log(
             `${driverReport.name}: ${Math.round(driverReport.milesDriven)} miles ${!isNaN(driverReport.averageSpeed) ? `@ ${Math.round(driverReport.averageSpeed)} mph` : ""}`
         );
