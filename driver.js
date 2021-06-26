@@ -17,6 +17,7 @@ class Driver {
         return this.addAllTripsReport();
     };
     
+    // This function will add all trips and sum out the rest
     addAllTripsReport = function() {
         const totals = this.trip.reduce(
             (sumTrip, trip) => {
@@ -57,6 +58,7 @@ class Driver {
     };
 }
 
+// Allows file to be access
 module.exports = {
     Driver
 };

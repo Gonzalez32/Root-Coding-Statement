@@ -38,10 +38,13 @@ Kumi: 0 miles
 
 ## My Outlook Process
 
-Before any code is written, I wrote all my logic down and review on how I would tackle this problem down.
+Before any code is written, I wrote some of my logic down and review on how I would tackle this problem.
 ![note](https://i.imgur.com/ivA8NNI.jpg)
 At first, my thought was to generate express but after re-reading the problem statement I was overthinking it.
-In the **driver.js** file I decided to make a class for driver knowing is has one assocation, trip. This is where (one to many) comes to play, as a driver has many trips. First command is Driver as it will register a new driver in the app. Second command is Trip which is connected to driver in this statement.
+In **driver.js** file I decided to make a class for driver knowing it has one assocation, trip. This is where (one to many) comes to play, as a `driver has many trips`. First command is Driver as it will register a new driver in the app. Second command is Trip which is connected to driver, in this statement. Trip has the following fields: start time, stop time, & miles driven. Given this problem is a bit tricky on how to report each driver with total miles driven and the average speed as well. The function `addAllTripsReport` is within the class **Driver** that allows us to generate the report and discard speed less than 5pmh or greater than 100pmh.
+
+In **runProgram.js** file is where we will run our file. I had to lookup Node.js [documentation](https://nodejs.org/api/readline.html#readline_class_interface) for Class: Interface. The readline module provides an interface for reading data from a readable streams, one line at a time as it says. Since I require the Driver, within `runProgram.js` I can use the functionality class driver. And when the program runs it will `console.log()` the message for the user to see drivers, miles, and speed from the `input.txt`.
+
 
 ## Usage
-* From the root directory we can run the program in our command line using `node runProgram.js` that will get a list of drivers including mileage & mph.
+* From the root directory we can run the program in our command line using `> node runProgram.js` that will get a list of drivers including mileage & mph.
